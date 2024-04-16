@@ -1,0 +1,203 @@
+.navbar-brand img{
+    height: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #313131;
+    font-family: "Gelion", "Helvetica", "Helvetica Neue", sans-serif;
+}
+
+button{
+    font-family: "Gelion", "Helvetica", "Helvetica Neue", sans-serif;
+}
+
+
+#button-space{
+    margin-right: 6%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.nav-item{
+    padding-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.1rem;
+    font-weight:lighter;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.navbar-brand {
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+#brand {
+    font-size: 1rem;
+}
+
+
+.user {
+    display: none;
+}
+
+
+#get-started{
+    display: none;
+}
+
+    
+footer{
+    position: relative;
+    height: 15rem;
+}
+
+
+.footer h2{
+    position: absolute;
+    left: 6.5%;
+    top: 20%;
+}
+
+.footer h5{
+    position: absolute;
+    opacity: 0.5;
+    top: 40%;
+    left: 6.5%;
+}
+
+.footer span{
+    position: absolute;
+    opacity: 0.5;
+    top: 70%;
+    left: 6.5%;
+}
+
+.footer .footer-info ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    line-height: 2;
+    left: 92%;
+    top: 15%;
+
+}
+
+.footer .footer-info .info{
+    opacity: 0.5;
+}
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    
+    /* Add additional styling for your footer here */
+}
+
+
+
+
+/* !Responsive Start */
+@media screen and (max-width:1600px){
+    /* footer */
+
+   .footer .footer-info ul{
+        left: 80%;
+    }
+}
+@media screen and (max-width:1200px){
+    /* footer */
+
+   .footer .footer-info ul{
+        left: 85%;
+    }
+}
+
+
+@media (max-width: 1050px) {
+
+    /*hide buttons*/
+    #button-space {
+        display: none;
+    }
+
+    /*make like a*/
+    .user {
+        display: inline-block;
+    }
+
+     /*Toogle bar item*/
+     #get-started{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:900px){
+    /* footer */
+
+   .footer .footer-info ul{
+        left: 75%;
+    }
+
+    .navbar-brand img{
+        max-width: 15rem;
+        max-height: 5rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:607px){
+    /* footer */
+    .footer .footer-info ul{
+        left: 65%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    /* footer */
+    .footer{
+        margin-top: 4rem;
+    }
+    .footer span{
+        position: absolute;
+        opacity: 0.5;
+        top: 70%;
+        left: 6.5%;
+    }
+}
+
+@media screen and (max-width:320px){
+    .footer{
+        width: 20rem;
+        margin-top: 4rem;
+    }
+
+    .footer .footer-info ul{
+        left: 70%;
+    }   
+}
+
+
+@media screen and (max-width:280px){
+    .footer{
+        width: 19rem;
+        margin-top: 4rem;
+    }
+
+   .footer .footer-info ul{
+        left: 70%;
+    }
+}
+
+/* !Responsive End */
