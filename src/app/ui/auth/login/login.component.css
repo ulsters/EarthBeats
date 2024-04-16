@@ -1,0 +1,121 @@
+
+main{
+    margin: 10rem;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.info-container{
+    display: grid;
+    grid-template-rows: 2fr 5fr 1fr;
+    width: 52rem;
+    height: 40rem;
+
+}
+
+.country-overlay {
+    position: absolute; /* Position absolute to fix the flags */
+}
+
+/* Adjust the position of the flags relative to the map */
+.country-overlay img {
+    position: relative;
+    top: -10px; /* Adjust this value as needed */
+    left: -10px; /* Adjust this value as needed */
+}
+
+.icon{
+   width: 5rem;
+   height: 10rem;
+   margin-top: 2rem;
+}
+
+.info h1,p{
+    margin-top: 4rem;
+    color: black;
+    text-align: center;
+}
+
+.login-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.login-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.form button{
+    padding: 1rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    text-align: center; 
+    font-weight: bolder;
+    margin: 5rem;
+}
+
+.test-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1; /* Diğer içeriklerin önünde olması için */
+    opacity: 0.5; /* Opaklık seviyesi (0 ile 1 arasında) */
+}
+
+
+@media screen and (max-width:1200px){
+    .main-container{
+        display: grid;
+        grid-template-columns: -1;
+        grid-template-columns: auto;
+    }
+
+    .left-container{
+        display: none;
+    }
+
+    .form button{
+        margin: 5rem;
+    }
+
+    .right-container img{
+        margin-top: 5rem;
+        width: 10rem;
+        height: 10rem;
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+    .login-text{
+        font-size: 1rem;
+    }
+
+}

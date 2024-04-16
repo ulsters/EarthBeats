@@ -1,0 +1,263 @@
+/* First Content */
+
+.intro-container {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 5rem auto 10rem auto;
+}
+
+
+.bottom-buttons{
+  display: flex;
+  
+}
+
+#button-style{
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+
+.slogan {
+  margin: 5%;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  width: 30rem;
+  height: 5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bottom-text{
+  margin-top: 5rem;
+  font-size: 1.2rem;
+}
+
+.bottom-buttons{
+  margin-top: 2.5rem;
+}
+
+/* Second Page Content */
+
+.second-container{
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 10rem auto 15rem auto;
+}
+
+.second-content{
+  margin: 5%;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  width: 20rem;
+  height: 5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.second-content button{
+  margin-top: 8rem;
+}
+
+.informative-text{
+  line-height: 2rem;
+  font-size: 1rem;
+  width: 20rem;
+  height: 5rem;
+}
+
+.second-container button{
+  margin-top: 6rem;
+}
+
+/* Third Page Content */
+
+.third-container{
+
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 10rem auto 15rem auto;
+
+}
+
+
+/*Last Content*/
+
+.container{
+  margin-top: 5rem;
+  background-color: rgb(240, 240, 240);
+  border-radius: 12px;
+  height: 35rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 10rem auto 20rem auto;
+}
+
+.last-content{
+  margin: 5%;
+  line-height: 4rem;
+  font-size: 3rem;
+  width: 25rem;
+  height: 20rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bottom-info{
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  width: 15rem;
+  line-height: 2rem;
+
+}
+
+
+@media screen and (max-width: 1300px) {
+
+
+  /* First Part */
+
+  .intro-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .intro-second {
+    margin-top: 60%;
+  }
+
+  .intro-img img {
+    margin-top: 30rem;
+    max-width: 25rem;
+  }
+
+  .slogan {
+    font-size: 2.5rem; 
+  }
+
+  /* Second Part */
+
+  .second-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }  
+
+
+  .second-img img{
+    max-width: 25rem;
+    margin-top: 2rem;
+  }
+
+
+  /* Third Part */
+
+  .third-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .hr-margin{
+    margin-top: 35rem;
+  }
+  
+  .third-container img{
+    margin-top: 30rem;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+/* First Part */
+
+.intro-container{
+  margin-top: 3rem;
+}
+  
+.slogan {
+  margin: 5%;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  width: 20rem;
+  height: 250px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bottom-buttons{
+  margin-top: 2.5rem;
+}
+
+.intro-img img {
+  max-width: 20rem;
+  margin-top: 15rem;
+}
+
+.bottom-text{
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+/* Second Part And Third Part */
+
+.second-container{
+  margin-top: 3rem;
+}
+
+.informative-text{
+  font-size: 1rem;
+}
+
+.second-img img{
+  max-width: 20rem;
+  margin-top: 3rem;
+}
+
+.second-content{
+  margin-top: 5rem;
+}
+
+.second-content button{
+  margin-top: 8rem;
+}
+
+.hr-margin{
+  margin-top: 35rem;
+
+}
+
+.third-container img{
+  margin-top: 30rem;
+}
+
+
+/* Last Part */
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 80%;
+  
+}
+
+.bottom-img{
+  margin-top: 15rem;
+}
+
+.last-content{
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+
+
+}
+
+
+
+
+

@@ -1,0 +1,116 @@
+.main {
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-container {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    right: 5%; 
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90%;
+}
+
+.left-container,
+.right-container {
+    display: grid;
+    position: relative;
+    z-index: 2;
+}
+
+
+.left-container {
+    display: grid;
+    grid-template-rows: 0.5fr 0.25fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-areas: 
+        "row1 row1"
+        "row2col1 row2col2"
+        "row3 row3";
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+.right-container {
+    display: grid;
+    grid-template-rows: 0.5fr 0.25fr 0.5fr; 
+    grid-template-columns: 0.5fr 0.5fr; 
+    grid-template-areas: 
+        "row1col1 row1col2"
+        "row2 row2"
+        "row3col1 row3col2";
+    row-gap: 1rem; 
+    column-gap: 1rem;
+}
+
+.main-container .left-container,
+.main-container .right-container {
+    margin: 1rem; 
+    border-radius: 5rem 5rem 5rem 5rem;
+}
+
+.image-text-overlay {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.provider-text {
+    margin: 1.2rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.news-item {
+    position: relative;
+}
+
+.image-text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+   
+}
+
+.provider-text-small {
+    font-size: 1rem; /* Adjust as needed */
+    color: white;
+    bottom: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+    line-height: 2rem;
+}
+
+.centered-text-small {
+    font-size: 1.3rem; /* Adjust as needed */
+    color: white;
+    text-align: left;
+    margin-left: 2rem;
+}
+

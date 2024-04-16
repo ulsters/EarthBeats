@@ -1,0 +1,88 @@
+.title{
+  margin: 5%;
+  line-height: 4rem;
+  font-size: 2.5rem;
+  width: 10rem;
+  height: 5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group{
+  margin-top: 5rem;
+  margin-left: 21.5%;
+  margin-bottom: 10rem;
+}
+
+.input-group-text{
+  padding: 1.3rem 1.3rem;
+}
+
+.search-btn{
+  margin-left: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+/* News Cards*/
+
+.news-title{
+  margin-top: 4rem;
+  margin-left: 10rem;
+  margin-bottom: 4rem;
+  font-weight: bolder;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.news-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.news-card{
+  margin-top: 8rem;
+  margin-right: 6rem;
+  margin-left: 6rem;
+  width: 25rem;
+  height: 24rem;
+  opacity: 1;
+  background-color: rgb(240, 240, 240);
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+
+/* News Card Content */
+
+.card-img{
+  display: flex;
+  height: 15rem;
+}
+
+.img-size{
+  margin: 5%;
+  width: 30rem;
+  border-radius: 0.8rem;
+}
+
+.card-content{
+  margin-left: 1.5rem;
+}
+
+.card-btn{
+  margin-left: 5%;
+  padding: 0.8rem;
+}
+
+.trend-icon{
+  margin-top: 0.3rem;
+}
