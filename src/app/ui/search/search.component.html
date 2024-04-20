@@ -1,84 +1,47 @@
-<main>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
-
-<p class="title fw-bolder">EXPLORE WORLD</p>
-<div class="img-container">
+<main>
+  <p class="title fw-bolder">EXPLORE WORLD</p>
+  <div class="img-container">
     <img src="./assets/search/test-world.png" alt="">
-</div>
+  </div>
 
-<div class="input-group w-50">
+  <div class="input-group w-50">
     <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon1">
         <!-- Insert the SVG code here -->
         <img src="./assets/search/icon.svg" alt="">
       </span>
     </div>
-    <input type="text" class="form-control" placeholder="Search by country or keyword" aria-label="Search" aria-describedby="basic-addon1">
+    <!-- Use template reference variable (#countryInput) to capture input value -->
+    <input #countryInput type="text" class="form-control" placeholder="Search by country or keyword" aria-label="Search" aria-describedby="basic-addon1">
     <div class="input-group-append">
-      <button class="search-btn btn btn-primary w-100" (click)="getJoke()" type="submit">Search</button>
-    </div>
-</div>
-
-
-<hr>
-<p class="news-title h1">Latest News</p>
-<hr>
-
-<div class="news-container">
-  
-  <!-- Card -->
-  <div class="news-card">
-    <div class="card-img">
-      <img class="img-size" src="assets/search/sample-1.png" alt="Your Image Alt Text">
-    </div>
-    <div class="card-content">
-      <h4>Top Stories</h4>
-      <p class="text-black-50">Breaking news, headlines, trending</p>
-      <div class="d-flex mt-4">
-        <img class="trend-icon" src="./assets/search/trend-icon.svg" alt="">
-        <h5>Review</h5>
-      </div>
+      <!-- Call getNews() method with input value when the button is clicked -->
+      <button class="search-btn btn btn-primary w-100" (click)="getNews(countryInput.value)" type="submit">Search</button>
     </div>
   </div>
 
-   <!-- Card -->
-
-   <div class="news-card">
-    <div class="card-img">
-      <img class="img-size" src="assets/search/sample-1.png" alt="Your Image Alt Text">
-    </div>
-    <div class="card-content">
-      <h4>Top Stories</h4>
-      <p class="text-black-50">Breaking news, headlines, trending</p>
-      <div class="d-flex mt-4">
-        <img class="trend-icon" src="./assets/search/trend-icon.svg" alt="">
-        <h5>Review</h5>
+  <!-- Container for news articles -->
+  <div class="news-container">
+    <hr>
+    <p class="news-title h1 mt-5">Latest News</p>
+    <hr>
+    <!-- Loop over newsData array and display each news item -->
+    <div class="news-card mt-5" *ngFor="let newsItem of newsData">
+      <div class="card-img">
+        <!-- Use newsItem.newsImageUrl if available -->
+        <img class="img-size" src="{{ newsItem.newsImageUrl ? newsItem.newsImageUrl : 'assets/search/sample-1.png' }}" alt="Image">
+      </div>
+      <div class="card-content">
+        <h4>{{ newsItem.newsTitle }}</h4>
+        <p class="text-black-50">{{ newsItem.newsContent }}</p>
+        <div class="d-flex mt-4">
+          <img class="trend-icon" src="./assets/search/trend-icon.svg" alt="">
+          <h5>{{ newsItem.newsPopularityType }}</h5>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- Card -->
-
-   <div class="news-card">
-    <div class="card-img">
-      <img class="img-size" src="assets/search/sample-1.png" alt="Your Image Alt Text">
-    </div>
-    <div class="card-content">
-      <h4>Top Stories</h4>
-      <p class="text-black-50">Breaking news, headlines, trending</p>
-      <div class="d-flex mt-4">
-        <img class="trend-icon" src="./assets/search/trend-icon.svg" alt="">
-        <h5>Review</h5>
-      </div>
-    </div>
-  </div>
-  
-</div>
-
-
-
 </main>

@@ -5,6 +5,8 @@ import { NewsModule } from './news/news.module';
 import { SearchModule } from './search/search.module';
 import { MapModule } from './map/map.module';
 import { AuthModule } from './auth/auth.module';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -16,7 +18,9 @@ import { AuthModule } from './auth/auth.module';
     NewsModule,
     SearchModule,
     MapModule,
-    AuthModule
+    AuthModule,
+    FormsModule,
+    HttpClientModule
   ],
   exports:[
     LandingModule,
