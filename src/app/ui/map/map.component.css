@@ -1,30 +1,23 @@
+/* Global Styles */
+
 body {
   font-family: sans-serif;
-  font-size: 175%;
+  line-height: 1.5;
+  color: #333;
 }
 
+/* Wrapper Styles */
+
 .wrap {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-svg {
-  padding: 2rem;
-}
-
-#tooltip {
-  padding: 2rem;
-  background-color: #a9a9a9;
-  color: white;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
+/* SVG Map Styles */
 
 .land {
   fill: #ccc;
@@ -39,8 +32,94 @@ svg {
   fill: #a9a9a9;
 }
 
-.tooltip {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
+/* Tooltip Styles */
+
+#tooltip {
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #a9a9a9;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* News Container Styles */
+
+.news-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-card {
+  display: flex;
+  width: 100%;
+  min-width: 20rem; /* Limit the maximum width of the news card */
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.card-img {
+  width: 100%; /* Adjust image width to fill its container */
+  height: auto; /* Allow height to adjust automatically */
+  min-height: 365px; /* Limit maximum width of the image */
+  max-width: 500px;
+}
+
+
+.card-content {
+  flex: 1; /* Content takes up remaining space */
+  padding: 2rem;
+}
+
+.card-content h4 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold; /* Set font weight to bold */
+  color: #333;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  color: #666;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.trend-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  .news-container {
+    padding: 1rem;
+  }
+  
+  .news-card {
+    flex-direction: column;
+  }
+  
+  .card-img {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
 }
