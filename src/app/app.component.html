@@ -9,16 +9,16 @@
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="">Home</a>
+          <a class="nav-link fs-5" aria-current="page" routerLink="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="news">Popular News</a>
+          <a class="nav-link fs-5" aria-current="page" routerLink="news">Popular News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="search">Search</a>
+          <a class="nav-link fs-5" aria-current="page" routerLink="search">Search</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" routerLink="map">Map</a>
+          <a class="nav-link fs-5" aria-current="page" routerLink="map">Map</a>
         </li>
         
         <li class="nav-item dropdown">
@@ -42,18 +42,22 @@
 
 
 <!-- ! Footer Start -->
-<footer class="footer bg-light">
-  <h2>EarthBeats</h2>
-  <h5>Your trusted global news source since 2024!</h5>
-  <span>EarthBeats Inc @</span>
-  <div class="footer-info">
-      <ul>
-          <a href="">Help</a>
-          <a class="info" >FAQ</a>
-          <a class="info" >Customer</a>
-          <a class="info" >How it works</a>
-          <a class="info" >Contact us</a>
+<footer class="footer bg-light p-5">
+  <div class="d-flex justify-content-between px-5">
+    <div class="d-flex flex-column">
+      <h2 class="mb-4 lh-lg fs-2">EarthBeats</h2>
+      <h5 class="mb-4 lh-base fs-4">Your trusted global news source since 2024!</h5>
+      <span class="mb-4 lh-sm fs-5">Copyright © 2024 EarthBeats</span>
+    </div>
+    
+    <div class="footer-info">
+      <ul class="list-unstyled">
+        <li class="mb-3"><a routerLink="" class="text-decoration-none fs-5 text-black-50 hover-black">Home</a></li>
+        <li class="mb-3"><a routerLink="news" class="text-decoration-none  fs-5 text-black-50 hover-black">Popular News</a></li>
+        <li class="mb-3"><a routerLink="search" class="text-decoration-none  fs-5 text-black-50 hover-black">Search</a></li>
+        <li class="mb-3"><a routerLink="map" class="text-decoration-none  fs-5 text-black-50 hover-black">Map</a></li>
       </ul>
+    </div>
   </div>
 </footer>
   

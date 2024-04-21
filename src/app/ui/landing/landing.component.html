@@ -18,8 +18,8 @@
       <div class="text-black-50">
         <p class="bottom-text">Stay informed with WorldBeats</p>
         <div class="bottom-buttons">
-          <button type="button" class="btn btn-primary">Get Started</button>
-          <button type="button" class="btn p-3 ms-5 border border-2">Learn more</button>
+          <button type="button" class="btn btn-primary" (click)="navigateTo('search')">Get Started</button>
+          <button type="button" class="btn p-3 ms-5 border border-2" (click)="navigateTo('map')">Learn more</button>
 
         </div>
       </div>
@@ -52,7 +52,7 @@
       country or by any keyword. Stay updated with the latest happenings around the world.</p>
     </div>
 
-    <button type="button" class="btn p-3 border border-2">Try now</button>
+    <button type="button" class="btn p-3 border border-2" (click)="navigateTo('map')">Try now</button>
   </div>
 
 </div>
@@ -75,7 +75,7 @@
       country or by any keyword. Stay updated with the latest happenings around the world.</p>
     </div>
 
-    <button type="button" class="btn p-3 border border-2">Try now</button>
+    <button type="button" class="btn p-3 border border-2" (click)="navigateTo('search')">Try now</button>
   </div>
 
   <div class="second-img">
