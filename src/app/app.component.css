@@ -2,19 +2,12 @@
     height: 5rem;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-family: "Gelion", "Helvetica", "Helvetica Neue", sans-serif;
-}
-
-button{
-    font-family: "Gelion", "Helvetica", "Helvetica Neue", sans-serif;
-}
-
 
 #button-space{
     margin-right: 6%;
     padding-left: 2%;
     padding-right: 2%;
+    font-family: "Gelion", "Helvetica", "Helvetica Neue", sans-serif;
 }
 
 .nav-item{
@@ -22,10 +15,10 @@ button{
 }
 
 .nav-link{
-    font-size: 1.1rem;
+    font-size: 2rem;
     font-weight:lighter;
     color: black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
 }
 
 .navbar-brand {
@@ -51,6 +44,10 @@ button{
 .hover-black:hover {
     color: black !important;
     font-size: 5rem; 
+}
+
+.footer-info{
+    margin-right: 10rem;
 }
 
 
@@ -87,6 +84,7 @@ button{
      /*Toogle bar item*/
      #get-started{
         display: inline-block;
+        font-size: 1.2rem;
     }
 }
 
