@@ -1,0 +1,180 @@
+.navbar-brand img{
+    height: 5rem;
+}
+
+
+#button-space{
+    margin-right: 6%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: "Gelion", "Helvetica", "Helvetica Neue", sans-serif;
+}
+
+.nav-item{
+    padding-left: 5rem;
+}
+
+.nav-link{
+    font-size: 2rem;
+    font-weight:lighter;
+    color: black;
+    
+}
+
+.navbar-brand {
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+#brand {
+    font-size: 1rem;
+}
+
+
+.user {
+    display: none;
+}
+
+
+#get-started{
+    display: none;
+}
+
+    
+.hover-black:hover {
+    color: black !important;
+    font-size: 5rem; 
+}
+
+.footer-info{
+    margin-right: 10rem;
+}
+
+
+@media screen and (max-width: 1600px) {
+
+    .nav-item {
+        padding-left: 3rem;
+    }
+
+    .navbar-brand {
+        margin-left: 1%;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* !Responsive Start */
+@media screen and (max-width:1600px){
+    /* footer */
+
+   .footer .footer-info ul{
+        left: 80%;
+    }
+}
+@media screen and (max-width:1300px){
+    /* footer */
+
+   .footer .footer-info ul{
+        left: 85%;
+    }
+    .nav-item {
+        padding-left: 4rem;
+    }
+
+    .navbar-brand {
+        margin-left: 2%;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+}
+
+
+@media (max-width: 1050px) {
+
+    /*hide buttons*/
+    #button-space {
+        display: none;
+    }
+
+    /*make like a*/
+    .user {
+        display: inline-block;
+    }
+
+     /*Toogle bar item*/
+     #get-started{
+        display: inline-block;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width:900px){
+    /* footer */
+
+   .footer .footer-info ul{
+        left: 75%;
+    }
+
+    .navbar-brand img{
+        max-width: 15rem;
+        max-height: 5rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:607px){
+    /* footer */
+    .footer .footer-info ul{
+        left: 65%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    /* footer */
+    .footer{
+        margin-top: 4rem;
+    }
+    .footer span{
+        position: absolute;
+        opacity: 0.5;
+        top: 70%;
+        left: 6.5%;
+    }
+}
+
+@media screen and (max-width:320px){
+    .footer{
+        width: 20rem;
+        margin-top: 4rem;
+    }
+
+    .footer .footer-info ul{
+        left: 70%;
+    }   
+}
+
+
+@media screen and (max-width:280px){
+    .footer{
+        width: 19rem;
+        margin-top: 4rem;
+    }
+
+   .footer .footer-info ul{
+        left: 70%;
+    }
+}
+
+/* !Responsive End */

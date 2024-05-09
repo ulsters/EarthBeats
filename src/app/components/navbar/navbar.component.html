@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid shadow-sm p-3">
+      <a class="navbar-brand" id="brand" routerLink=""><img src="assets/logo-test.png" alt=""></a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link fs-5" aria-current="page" routerLink="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" aria-current="page" routerLink="/news">Popular News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" aria-current="page" routerLink="/search">Search</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" aria-current="page" routerLink="/map">Map</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link text-success dropdown-toggle" id="get-started" href="#" data-bs-toggle="dropdown" routerLink="map" role="button" aria-expanded="false">Get Started</a>
+            <ul class="dropdown-menu bg-light">
+              <li><a class="dropdown-item h6" routerLink="login">Sign In</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item h6">Explore</a></li>
+            </ul>
+          </li>
+        </ul>
+  
+        <a id="button-space" class="btn btn-outline-secondary mx-2" (click)="navigateTo('login')">Sign Up</a>
+        <a id="button-space" class="btn btn-primary text-white" (click)="navigateTo('map')">Explore</a>
+        
+      </div>
+    </div>            
+  </nav>
