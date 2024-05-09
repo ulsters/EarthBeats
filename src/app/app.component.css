@@ -51,6 +51,21 @@
 }
 
 
+@media screen and (max-width: 1600px) {
+
+    .nav-item {
+        padding-left: 3rem;
+    }
+
+    .navbar-brand {
+        margin-left: 1%;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+}
+
 
 /* !Responsive Start */
 @media screen and (max-width:1600px){
@@ -60,11 +75,22 @@
         left: 80%;
     }
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1300px){
     /* footer */
 
    .footer .footer-info ul{
         left: 85%;
+    }
+    .nav-item {
+        padding-left: 4rem;
+    }
+
+    .navbar-brand {
+        margin-left: 2%;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
     }
 }
 
@@ -86,6 +112,7 @@
         display: inline-block;
         font-size: 1.2rem;
     }
+
 }
 
 @media screen and (max-width:900px){
