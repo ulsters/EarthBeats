@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MapComponent } from './map.component';
 import { RouterModule } from '@angular/router';
+import axios from 'axios';
+import { Observable } from 'rxjs';
+
 
 
 @NgModule({
@@ -18,4 +21,6 @@ import { RouterModule } from '@angular/router';
     MapComponent
   ]
 })
-export class MapModule { }
+export class MapModule {
+
+ }

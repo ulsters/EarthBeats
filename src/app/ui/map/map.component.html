@@ -190,7 +190,7 @@
 <!-- News container -->
 <div class="news-container">
   <!-- Loop over newsData array and display each news item -->
-  <div class="news-card mt-5" *ngFor="let newsItem of newsData">
+  <div class="news-card mt-5" *ngFor="let newsItem of newsData" (click)="navigateToNewsDetail(newsItem)">
     <div class="card-img">
       <!-- Use newsItem.newsImageUrl if available -->
       <img [src]="newsItem.newsImageUrl ? newsItem.newsImageUrl : 'assets/search/sample-1.png'" alt="Image" width="500" height="365">
