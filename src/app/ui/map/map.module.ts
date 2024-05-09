@@ -4,6 +4,7 @@ import { MapComponent } from './map.component';
 import { RouterModule } from '@angular/router';
 import axios from 'axios';
 import { Observable } from 'rxjs';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 
 
@@ -13,6 +14,7 @@ import { Observable } from 'rxjs';
   ],
   imports: [
     CommonModule,
+    ComponentsModule,
     RouterModule.forChild([
       {path: '', component: MapComponent}
     ])
