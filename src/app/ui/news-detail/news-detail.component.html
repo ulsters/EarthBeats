@@ -1,0 +1,10 @@
+<div class="news-detail-container" *ngIf="newsItem">
+    <div class="d-flex justify-content-center mt-5 px-5">
+      <img [src]="newsItem.newsImageUrl ? newsItem.newsImageUrl : 'assets/search/sample-1.png'" alt="Image" width="80%" height="600">
+    </div>
+    <div class="card-content mt-5 p-5">
+      <h2 class="fs-1 fw-bold">{{ newsItem.newsTitle }}</h2>
+      <p class="text-black-50 fs-3 mt-5 pb-5 mb-5">{{ newsItem.newsContent }}</p>
+    </div>
+    
+  </div>
