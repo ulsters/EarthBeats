@@ -32,57 +32,61 @@
 
 /* News Cards*/
 
-.news-title{
-  margin-top: 4rem;
-  margin-left: 10rem;
-  margin-bottom: 4rem;
-  font-weight: bolder;
-  font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
-}
+/* News Container Styles */
 
-.news-container{
+.news-container {
+  margin-top: 2rem;
+  padding: 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 
-
-.news-card{
-  margin-top: 8rem;
-  margin-right: 6rem;
-  margin-left: 6rem;
-  width: 25rem;
-  height: 24rem;
-  opacity: 1;
-  background-color: rgb(240, 240, 240);
-  border-radius: 12px;
-  box-sizing: border-box;
-}
-
-
-/* News Card Content */
-
-.card-img{
+.news-card {
   display: flex;
-  height: 15rem;
+  width: 100%;
+  min-width: 20rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
-.img-size{
-  margin: 5%;
-  width: 30rem;
-  border-radius: 0.8rem;
+.card-img {
+  width: 100%; 
+  height: auto;
+  min-height: 365px; 
+  max-width: 500px;
 }
 
-.card-content{
-  margin-left: 1.5rem;
+
+.card-content {
+  flex: 1; 
+  padding: 2rem;
 }
 
-.card-btn{
-  margin-left: 5%;
-  padding: 0.8rem;
+.card-content h4 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold; 
+  color: #333;
 }
 
-.trend-icon{
-  margin-top: 0.3rem;
+.card-content p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  color: #666;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.trend-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }

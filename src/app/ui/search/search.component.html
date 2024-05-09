@@ -23,25 +23,22 @@
     </div>
   </div>
 
-  <!-- Container for news articles -->
-  <div class="news-container">
-    <hr>
-    <p class="news-title h1 mt-5">Latest News</p>
-    <hr>
-    <!-- Loop over newsData array and display each news item -->
-    <div class="news-card mt-5" *ngFor="let newsItem of newsData">
-      <div class="card-img">
-        <!-- Use newsItem.newsImageUrl if available -->
-        <img class="img-size" src="{{ newsItem.newsImageUrl ? newsItem.newsImageUrl : 'assets/search/sample-1.png' }}" alt="Image">
-      </div>
-      <div class="card-content">
-        <h4>{{ newsItem.newsTitle }}</h4>
-        <p class="text-black-50">{{ newsItem.newsContent }}</p>
-        <div class="d-flex mt-4">
-          <img class="trend-icon" src="./assets/search/trend-icon.svg" alt="">
-          <h5>{{ newsItem.newsPopularityType }}</h5>
-        </div>
+  <!-- News container -->
+<div class="news-container">
+  <!-- Loop over newsData array and display each news item -->
+  <div class="news-card mt-5" *ngFor="let newsItem of newsData" (click)="navigateToNewsDetail(newsItem)">
+    <div class="card-img">
+      <!-- Use newsItem.newsImageUrl if available -->
+      <img [src]="newsItem.newsImageUrl ? newsItem.newsImageUrl : 'assets/search/sample-1.png'" alt="Image" width="500" height="365">
+    </div>
+    <div class="card-content">
+      <h4>{{ newsItem.newsTitle }}</h4>
+      <p class="text-black-50">{{ newsItem.newsContent }}</p>
+      <div class="d-flex mt-3 align-items-center">
+        <img class="trend-icon" src="../../../assets/icons/trend-icon.svg" alt="">
+        <h5 class="fw-bold fs-5 mb-0">{{ newsItem.newsPopularityType }}</h5>
       </div>
     </div>
   </div>
+</div>
 </main>
