@@ -12,7 +12,7 @@ export class SearchComponent {
   
 
   private apiUrl = 'https://localhost:44343/api/Countries/';
-  newsData: any[] = []; // Array to store fetched news data
+  newsData: any[] = [];
 
   constructor(private http: HttpClient, private router: Router) {}
 
