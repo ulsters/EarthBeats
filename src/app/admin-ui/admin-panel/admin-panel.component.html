@@ -1,1 +1,70 @@
-<p>admin-panel works!</p>
+<main class="bg-light d-flex">
+    <div class="d-flex w-25 vh-100">
+      <div class="d-flex flex-column justify-content-between bg-white">
+        <div class="d-flex align-items-center p-3 py-4">
+          <img src="./assets/logo-test.png" class="img-fluid" alt="">
+        </div>
+        <div class="p-5 flex-fill">
+          <div class="mb-4">
+            <h5 class="mb-0">News Management</h5>
+          </div>
+          <hr>
+          <div class="mb-4">
+            <h5 class="mb-0">User Management</h5>
+          </div>
+          <hr>
+        </div>
+        
+        <div class="p-5 mt-auto">
+          <div class="d-flex flex-column gap-4">
+            <div><strong class="mb-0 fs-5">Mustafa Alkan</strong></div>
+            <div><a href="#" class="btn btn-danger px-3 text-center">Logout</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-grow-1 px-5">
+      <div class="p-5">
+        <h2 class="mb-4 fs-3 fw-bol">Modify News</h2>
+        <div class="table-responsive">
+          <table id="myDataTable" class="table table-bordered table-hover mt-5">
+            <thead class="table-dark">
+              <tr class="p-5">
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mustafa</td>
+                <td>mustafa@example.com</td>
+                <td>25</td>
+                <td>
+                  <!-- Buttons related to the second row -->
+                  <div class="d-flex justify-content-center gap-2">
+                    <button type="button" class="btn btn-sm btn-primary py-2 px-3">Update</button>
+                    <button type="button" class="btn btn-sm btn-danger py-2 px-3">Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Mustafa</td>
+                <td>mustafa@example.com</td>
+                <td>25</td>
+                <td>
+                  <!-- Buttons related to the second row -->
+                  <div class="d-flex justify-content-center gap-2">
+                    <button type="button" class="btn btn-sm btn-primary py-2 px-3">Update</button>
+                    <button type="button" class="btn btn-sm btn-danger py-2 px-3">Delete</button>
+                  </div>
+                </td>
+              </tr>
+              <!-- More rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
