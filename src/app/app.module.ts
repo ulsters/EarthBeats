@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UiModule } from './ui/ui.module';
 import { RouterModule } from '@angular/router';
+import { AdminUiModule } from './admin-ui/admin-ui.module';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AdminUiModule,
     UiModule,
     RouterModule,
     BrowserAnimationsModule,

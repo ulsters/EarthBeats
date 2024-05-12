@@ -10,6 +10,7 @@ const routes: Routes = [
     {path:"map" , loadChildren: () => import('./ui/map/map.module').then(module => module.MapModule)},
     {path:"login" , loadChildren: () => import('./ui/auth/login/login.module').then(module => module.LoginModule)},
     {path:"register" , loadChildren: () => import('./ui/auth/register/register.module').then(module => module.RegisterModule)},
+    {path:"admin" , loadChildren: () => import('./admin-ui/admin-panel/admin-panel.module').then(module => module.AdminPanelModule)},
   ]
 
 
