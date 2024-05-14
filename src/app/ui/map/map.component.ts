@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -8,9 +8,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  newsData: any[] = [];
 
-  constructor(private http: HttpClient, private router: Router) {}
+  newsData: any[] = [];
+  isVisible: boolean = false;
+
+  toggleVisibility() {
+    this.isVisible = true;
+  }
+  constructor(private http: HttpClient, private router: Router,private elementRef:ElementRef) {}
+  goToDiv() {
+    const element = this.elementRef.nativeElement.querySelector('#country-news');
+    element.scrollIntoView({ behavior: 'smooth' });
+    this.isVisible=false;
+  }
 
   ngOnInit(): void {
     
@@ -26,7 +36,11 @@ export class MapComponent implements OnInit {
       });
     };
 
+
+    
+
     map?.addEventListener('click', (event) => {
+      this.toggleVisibility();
       if ((event.target as HTMLElement).classList.contains('land')) {
         const countryName = (event.target as HTMLElement).getAttribute('title');
         if (countryName) {
