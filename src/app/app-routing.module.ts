@@ -12,6 +12,7 @@ const routes: Routes = [
     { path: 'register', loadChildren: () => import('./ui/auth/register/register.module').then(module => module.RegisterModule) },
     { path: 'admin', loadChildren: () => import('./admin-ui/admin-panel/admin-panel.module').then(module => module.AdminPanelModule) },
     { path: 'modify-news/:id', loadChildren: () => import('./admin-ui/modify-news/modify-news.module').then(module => module.ModifyNewsModule) }, // Corrected path
+    { path: 'add-news', loadChildren: () => import('./admin-ui/add-news/add-news.module').then(module => module.AddNewsModule) }, 
 ];
 
 @NgModule({
