@@ -4,6 +4,7 @@ import * as $ from 'jquery';
 import 'datatables.net';
 import axios from 'axios';
 
+
 @Component({
   selector: 'app-admin-panel',
   templateUrl: './admin-panel.component.html',
