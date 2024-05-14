@@ -1,4 +1,4 @@
-<main class="bg-light d-flex flex-column flex-md-row">
+<main class="bg-light d-flex flex-column w-100 flex-md-row">
     <!-- Sidebar -->
     <div class="d-flex flex-column justify-content-between bg-white w-25 vh-100">
         <!-- Branding Header -->
@@ -27,51 +27,50 @@
 
 
     <div class="w-75 p-5">
-        <form>
+        <form [formGroup]="newsForm" (ngSubmit)="updateNews()">
             <div class="form-group">
-                <label for="exampleTextarea" class="col-sm-2 col-form-label col-form-label-lg">News Id</label>
+                <label for="newsId" class="col-sm-2 col-form-label col-form-label-lg">News Id</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control form-control-lg" id="exampleTextarea" rows="1" style="overflow: auto;"></textarea>
+                    <textarea class="form-control form-control-lg" id="newsId" rows="1" formControlName="newsId"></textarea>
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleTextarea" class="col-sm-2 col-form-label col-form-label-lg">Country Id</label>
+                <label for="countryId" class="col-sm-2 col-form-label col-form-label-lg">Country Id</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control form-control-lg" id="exampleTextarea" rows="1" style="overflow: auto;"></textarea>
+                    <textarea class="form-control form-control-lg" id="countryId" rows="1" formControlName="countryId"></textarea>
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleTextarea" class="col-sm-2 col-form-label col-form-label-lg">News Title</label>
+                <label for="newsTitle" class="col-sm-2 col-form-label col-form-label-lg">News Title</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control form-control-lg" id="exampleTextarea" rows="2" style="overflow: auto;"></textarea>
+                    <textarea class="form-control form-control-lg" id="newsTitle" rows="2" formControlName="newsTitle"></textarea>
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleTextarea" class="col-sm-2 col-form-label col-form-label-lg">News Content</label>
+                <label for="newsContent" class="col-sm-2 col-form-label col-form-label-lg">News Content</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control form-control-lg" id="exampleTextarea" rows="5" style="overflow: auto;"></textarea>
+                    <textarea class="form-control form-control-lg" id="newsContent" rows="5" formControlName="newsContent"></textarea>
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleTextarea" class="col-sm-2 col-form-label col-form-label-lg">Popularity</label>
+                <label for="popularity" class="col-sm-2 col-form-label col-form-label-lg">Popularity</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control form-control-lg" id="exampleTextarea" rows="1" style="overflow: auto;"></textarea>
+                    <textarea class="form-control form-control-lg" id="popularity" rows="1" formControlName="newsPopularityType"></textarea>
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleTextarea" class="col-sm-2 col-form-label col-form-label-lg">Publish Date</label>
+                <label for="publishDate" class="col-sm-2 col-form-label col-form-label-lg">Publish Date</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control form-control-lg" id="exampleTextarea" rows="1" style="overflow: auto;"></textarea>
+                    <textarea class="form-control form-control-lg" id="publishDate" rows="1" formControlName="newsPublishDate"></textarea>
                 </div>
             </div>
-
             <div class="form-group">
-                <label for="exampleTextarea" class="col-sm-2 col-form-label col-form-label-lg">Image Url</label>
+                <label for="imageUrl" class="col-sm-2 col-form-label col-form-label-lg">Image Url</label>
                 <div class="col-sm-10">
-                    <textarea class="form-control form-control-lg" id="exampleTextarea" rows="1" style="overflow: auto;"></textarea>
+                    <textarea class="form-control form-control-lg" id="imageUrl" rows="1" formControlName="newsImageUrl"></textarea>
                 </div>
             </div>
-
+            <button type="submit" class="btn btn-primary">Save</button>
         </form>
     </div>
 </main>

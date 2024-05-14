@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router'; // Import RouterModule
+import { ReactiveFormsModule } from '@angular/forms'; // Import ReactiveFormsModule
 import { ModifyNewsComponent } from './modify-news.component';
 
 @NgModule({
@@ -9,9 +10,10 @@ import { ModifyNewsComponent } from './modify-news.component';
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild([ // Import RouterModule.forChild
+    RouterModule.forChild([
       { path: '', component: ModifyNewsComponent }
-    ])
+    ]),
+    ReactiveFormsModule // Import ReactiveFormsModule here
   ],
   exports: [
     ModifyNewsComponent,
