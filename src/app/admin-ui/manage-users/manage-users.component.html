@@ -1,0 +1,63 @@
+<main class="bg-light d-flex">
+    <div class="d-flex w-25 vh-100">
+      <div class="d-flex flex-column justify-content-between bg-white ">
+        <div class="d-flex align-items-center p-3 py-4">
+          <img src="./assets/logo-test.png" class="img-fluid" alt="">
+        </div>
+        <div class="p-5 flex-fill">
+          <div class="mb-4">
+            <h5><a class="text-decoration-none text-dark" routerLink="/admin">News Management</a></h5>
+          </div>
+          <hr>
+          <div class="mb-4">
+            <h5><a class="text-decoration-none text-dark" routerLink="/manage-users">User Management</a></h5>
+          </div>
+          <hr>
+        </div>
+        
+        <div class="p-5 mt-auto">
+          <div class="d-flex flex-column gap-4">
+            <div><strong class="mb-0 fs-5">Mustafa Alkan</strong></div>
+            <div><a href="#" class="btn btn-danger px-3 text-center" routerLink="/login">Logout</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="px-5 w-100">
+      <div class="flex p-5">
+        <h2 class="mb-4 fs-3 fw-bold">User Management</h2>
+        <div class="table-responsive">
+  
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-dark py-2" routerLink="/create-user">Create User</button>
+          </div>
+  
+          <table id="myUserDataTable" class="table table-bordered table-hover mt-5">
+            <thead class="table-dark">
+              <tr>
+                <th>UserId</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>E-mail</th>
+                <th>UserRole</th>
+                <th>Actions</th> 
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of userData">
+                <td>{{ user.userId }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.password }}</td>
+                <td>{{ user.userEmail }}</td>
+                <td>{{ user.role }}</td>
+                <td>
+                  <button class="btn btn-primary detail-btn" (click)="navigateToUserDetails(user.userId)">Detail</button>
+                  <button class="btn btn-danger delete-btn" (click)="deleteUser(user.userId)">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
