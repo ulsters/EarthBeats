@@ -13,6 +13,9 @@ const routes: Routes = [
     { path: 'admin', loadChildren: () => import('./admin-ui/admin-panel/admin-panel.module').then(module => module.AdminPanelModule) },
     { path: 'modify-news/:id', loadChildren: () => import('./admin-ui/modify-news/modify-news.module').then(module => module.ModifyNewsModule) }, // Corrected path
     { path: 'add-news', loadChildren: () => import('./admin-ui/add-news/add-news.module').then(module => module.AddNewsModule) }, 
+    { path: 'manage-users', loadChildren: () => import('./admin-ui/manage-users/manage-users.module').then(module => module.ManageUsersModule) }, 
+    { path: 'create-user', loadChildren: () => import('./admin-ui/create-user/create-user.module').then(module => module.CreateUserModule) }, 
+    { path: 'modify-user/:id', loadChildren: () => import('./admin-ui/modify-user/modify-user.module').then(module => module.ModifyUserModule) } 
 ];
 
 @NgModule({
