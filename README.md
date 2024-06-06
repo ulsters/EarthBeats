@@ -1,27 +1,42 @@
-# EarthBeats
+# Global News Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+![earthbeats](https://github.com/ulsters/EarthBeats/assets/139650152/8da54110-0496-46f3-ab7d-6a935fd75e11)
 
-## Development server
+<br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
 
-## Code scaffolding
+**EarthBeats** is a global news platform that aims to enhance global connectivity and promote awareness of global issues through interactive world map integration.
+<br><br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Landing Page
+**Overview:** The landing page provides a welcoming introduction to EarthBeats, highlighting website functionallity.
+<br><br>
+![landing](https://github.com/ulsters/EarthBeats/assets/139650152/63dfd7c4-0a25-476f-b202-845b4ba1e7cb)
 
-## Build
+<br><br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Popular News Page
+**Overview:** Popular news page users are able to browse through the most popular news currently trending.
+<br><br>
+![news-page](https://github.com/ulsters/EarthBeats/assets/139650152/a5ac7822-4a8d-4b8b-972d-f1e92d736182)
+<br><br>
 
-## Running unit tests
+# World Map Page
+**Overview:** Users can view news from any country by selecting it on an interactive world map.
+<br><br>
+![map-page](https://github.com/ulsters/EarthBeats/assets/139650152/67e2d5b0-26c5-45e6-a02e-d66012fd0665)
+<br><br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Admin Panel Page
+**Overview:** Admins have access to a panel where they can manage the platform's contents.
+<br><br>
+![admin-panel](https://github.com/ulsters/EarthBeats/assets/139650152/56622660-28e4-4c1d-9d44-f34fa8d4eaa3)
+<br><br>
 
-## Running end-to-end tests
+# User Management Page
+**Overview:** Admins have access to a panel where they can manage the platform's users.
+<br><br>
+![user-management](https://github.com/ulsters/EarthBeats/assets/139650152/df4f682c-fb97-401d-bb2f-8dabce7a9465)
+<br><br>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
