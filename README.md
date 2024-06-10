@@ -22,6 +22,14 @@
 ![news-page](https://github.com/ulsters/EarthBeats/assets/139650152/a5ac7822-4a8d-4b8b-972d-f1e92d736182)
 <br><br>
 
+<br><br>
+
+# Search Page
+**Overview:** Search page allows users to find news articles by country name, enabling quick and easy access to region-specific news.
+<br><br>
+![search-page](https://github.com/ulsters/EarthBeats/assets/139650152/d06a1981-2fbe-445b-bf13-75819c57e26c)
+<br><br>
+
 # World Map Page
 **Overview:** Users can view news from any country by selecting it on an interactive world map.
 <br><br>
