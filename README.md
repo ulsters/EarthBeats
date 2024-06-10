@@ -40,3 +40,14 @@
 ![user-management](https://github.com/ulsters/EarthBeats/assets/139650152/df4f682c-fb97-401d-bb2f-8dabce7a9465)
 <br><br>
 
+## Web API
+
+You can also access the Web API that supports this platform from the following repository: https://github.com/ulsters/GlobalNewsAPIDev . The API provides endpoints for managing news articles, user authentication, and other backend services necessary for the operation of EarthBeats.
+
+## Technologies Used
+
+- **Angular**
+- **.ASP NET Core**
+- **MSSQL**
+
+
