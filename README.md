@@ -55,7 +55,7 @@ You can also access the Web API that supports this platform from the following r
 ## Technologies Used
 
 - **Angular**
-- **.ASP NET Core**
+- **ASP .NET Core**
 - **MSSQL**
 
 
